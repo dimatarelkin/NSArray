@@ -1,6 +1,4 @@
-# NSArray
-
-[HereIsTheFileWithCode](https://github.com/dimatarelkin/NSArray/blob/master/ClassroomNSArray/ClassroomNSArray/AppDelegate.m)
+# NSArray ---> [JumoToCode](https://github.com/dimatarelkin/NSArray/blob/master/ClassroomNSArray/ClassroomNSArray/AppDelegate.m)
 
 Please, find your tasks on NSArray and NSMutableArray bellow:
 - Create NSArray, containing several strings, using literal declaration.
