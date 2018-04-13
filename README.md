@@ -1,6 +1,6 @@
 # NSArray
 
-clickMe![Link Text](URL_to_wiki)
+[clickMe](NSArray/ClassroomNSArray/ClassroomNSArray/AppDelegate.m)
 
 Please, find your tasks on NSArray and NSMutableArray bellow:
 - Create NSArray, containing several strings, using literal declaration.
