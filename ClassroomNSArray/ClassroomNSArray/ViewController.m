@@ -16,14 +16,15 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
     //create pool
     NSAutoreleasePool* pool = [[NSAutoreleasePool alloc] init];
     
     
-    //1 Create NSArray, containing several strings, using literal declaration.
+//1 Create NSArray, containing several strings, using literal declaration.
     NSArray *arrayOfStrings = @[@"srting1", @"string2", @"string3",@"string4"]; //will be autoreleased and go to pool
     
-    //2 Create mutable array from piviously created NSArray.
+//2 Create mutable array from piviously created NSArray.
     NSMutableArray* mutArray = [[NSMutableArray arrayWithArray:arrayOfStrings] mutableCopy];
     
     ///////////////////releasing objects//////////////////////////////////////
@@ -32,7 +33,7 @@
     
     
     
-    //3 Create an empty array and obtain its first and last element in a safe way.
+//3 Create an empty array and obtain its first and last element in a safe way.
     NSArray* emptyArray = [NSArray array];
     [emptyArray firstObject];
     [emptyArray lastObject];
@@ -42,7 +43,7 @@
     [pool drain];
     
     
-    //4 Create NSArray, containing strings from 1 to 20:
+//4 Create NSArray, containing strings from 1 to 20:
     NSArray* arrWithTwentyStrings = @[@"1",@"2",@"3",@"4",@"5",@"6",@"7",@"8",@"9",@"10",
                                       @"11",@"12",@"13",@"14",@"15",@"16",@"17",@"18",@"19",@"20"]; //will be autoreleased
     
@@ -65,7 +66,7 @@
     
     
     
-    //5 Iterate over array and obtain item at index 13. Print an item.
+//5 Iterate over array and obtain item at index 13. Print an item.
     //first way
     for (int index = 0; index < deepCopyArray.count; index += 1) {
         if (index == 13) {
@@ -80,7 +81,7 @@
         }
     }];
     
-    //6 Make array mutable. Add two new entries to the end of the array, add an entry to the beginning of the array. Iterate over an array and remove item at index 5.
+//6 Make array mutable. Add two new entries to the end of the array, add an entry to the beginning of the array. Iterate over an array and remove item at index 5.
     
     /*
      id one = @"first"; //with NSString* - crash
@@ -129,7 +130,7 @@
     
     
     
-    //7 Create new array of mixed numbers. Sort it in an ascending and descending order.
+//7 Create new array of mixed numbers. Sort it in an ascending and descending order.
     NSArray* arrayWithNumbers = @[[NSNumber numberWithInteger:-12],
                                   [NSNumber numberWithDouble:23.123f],
                                   [NSNumber numberWithFloat:112.433f],
@@ -155,7 +156,7 @@
     
     NSLog(@"In descending order %@",[arrayWithNumbers componentsJoinedByString:@" <-- "]);
     
-    //releasing arrayWithNumbers - don't need to be released because of autoreleasing later
+    //arrayWithNumbers - don't need to be released because of autoreleasing later
     
 }
 
